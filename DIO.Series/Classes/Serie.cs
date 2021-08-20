@@ -24,7 +24,7 @@ namespace DIO.Series
 
         public override string ToString()
 		{
-			// Environment.NewLine https://docs.microsoft.com/en-us/dotnet/api/system.environment.newline?view=netcore-3.1
+			
             string retorno = "";
             retorno += "Gênero: " + this.Genero + Environment.NewLine;
             retorno += "Titulo: " + this.Titulo + Environment.NewLine;
@@ -43,7 +43,11 @@ namespace DIO.Series
 		{
 			return this.Id;
 		}
-       
+
+		public void Excluir() 
+		{
+            this.Excluido = true;
+        }
        
        
     }
